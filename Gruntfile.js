@@ -10,10 +10,10 @@ module.exports = function ( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-coffee');
+  // grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-conventional-changelog');
   grunt.loadNpmTasks('grunt-bump');
-  grunt.loadNpmTasks('grunt-coffeelint');
+  // grunt.loadNpmTasks('grunt-coffeelint');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-ngmin');
@@ -479,7 +479,7 @@ module.exports = function ( grunt ) {
         files: [ 
           'src/assets/**/*'
         ],
-        tasks: [ 'copy:build_assets' ]
+        tasks: [ 'copy:build_app_assets' ]
       },
 
       /**
@@ -549,7 +549,8 @@ module.exports = function ( grunt ) {
    * before watching for changes.
    */
   grunt.renameTask( 'watch', 'delta' );
-  grunt.registerTask( 'watch', [ 'build', 'karma:unit', 'delta' ] );
+  // grunt.registerTask( 'watch', [ 'quick', 'karma:unit', 'delta' ] );
+  grunt.registerTask( 'watch', [ 'quick', 'delta' ] );
 
   /**
    * The default task is to build and compile.
@@ -559,11 +560,18 @@ module.exports = function ( grunt ) {
   /**
    * The `build` task gets your app ready to run for development and testing.
    */
+   /*removed  'coffeelint' and 'coffee' from tasks*/
   grunt.registerTask( 'build', [
-    'clean', 'html2js', 'jshint', 'coffeelint', 'coffee', 'recess:build',
+    'clean', 'html2js', 'jshint', 'recess:build',
     'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
     'copy:build_appjs', 'copy:build_vendorjs', 'index:build', 'karmaconfig',
     'karma:continuous' 
+  ]);
+
+  grunt.registerTask( 'quick', [
+    'clean', 'html2js', 'jshint', 'recess:build',
+    'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
+    'copy:build_appjs', 'copy:build_vendorjs', 'index:build', 'karmaconfig'
   ]);
 
   /**
