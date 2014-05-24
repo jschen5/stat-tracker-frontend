@@ -1,0 +1,24 @@
+<div class="row">
+  <div id="login-form" class="input-group col-sm-4 col-sm-offset-4" nonvalidate name="login_form">
+    <h2>Sign In</h2>
+    <input type="text" class="form-control col-sm-12 bot-10"
+      name="email"
+      ng-model="login.email"
+      placeholder="Email" required />
+    <input type="password" class="form-control col-sm-12 bot-10"
+      name="password"
+      ng-model="login.password"
+      placeholder="Password" required />
+    <div class="checkbox pull-left bot-10">
+      <label>
+        <input type="checkbox" name="remember-me" ng-model="login.rememberMe"> Remember me
+      </label>
+    </div>
+    <button type="submit" id="btn-done" class="btn btn-default pull-right bot-10" ng-click="login()" ng-disabled="login_form.$invalid">
+      Login
+    </button>
+  </div>
+  <div id="register" class="col-sm-4 col-sm-offset-4">
+    <a class="pull-right" href="#/signup">Don't have an account?</a>
+  </div>
+</div>

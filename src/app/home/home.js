@@ -12,9 +12,9 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'ngBoilerplate.home', [
-  'ui.state',
-  'plusOne'
+angular.module( 'stattracker.home', [
+  // 'ui.state'
+  'ui.router'
 ])
 
 /**
@@ -23,16 +23,13 @@ angular.module( 'ngBoilerplate.home', [
  * this way makes each module more "self-contained".
  */
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'home', {
-    url: '/home',
-    views: {
-      "main": {
-        controller: 'HomeCtrl',
-        templateUrl: 'home/home.tpl.html'
-      }
-    },
-    data:{ pageTitle: 'Home' }
-  });
+  $stateProvider
+    .state( 'home', {
+      url: '/home',
+      controller: 'HomeCtrl',
+      templateUrl: 'home/home.tpl.html',
+      data:{ pageTitle: 'Home' }
+    });
 })
 
 /**
