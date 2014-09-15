@@ -20,7 +20,12 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li ng-if="!loggedIn"><a href="#/login">Login</a></li>
-          <li ng-if="loggedIn"><a href="">{{username}}</a></li>
+          <li ng-if="loggedIn">
+            <a class="pull-right" href="" ng-click="logout()">
+              <span class="glyphicon glyphicon-log-out"></span>
+            </a>
+            <a class="pull-right" href="" style="inline">{{username}}</a>
+          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>

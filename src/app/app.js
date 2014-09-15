@@ -19,17 +19,12 @@ angular.module( 'stattracker', [
       controller: 'StatsCtrl'
     });*/
 
-  // $urlRouterProvider.otherwise( '/home' );
+  $urlRouterProvider.otherwise( '/home' );
 })
 
 .run( function run ( $http, User ) {
 
   User.getCurrentUser();
-/*  User.userReady().then(function () {
-    if (User.loggedIn) {
-      
-    }
-  });*/
 
 })
 

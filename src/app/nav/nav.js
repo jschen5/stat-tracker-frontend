@@ -13,6 +13,7 @@ angular.module( 'stattracker.nav', [
     $scope.username = User.username;
   });
 
+  $scope.logout = User.logout;
 })
 
 ;
