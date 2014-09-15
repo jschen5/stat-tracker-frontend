@@ -1,4 +1,4 @@
-angular.module( 'stattracker.user', [
+angular.module( 'vivace.user', [
 ])
 
 .service('User', function ($http, $location, $q) {

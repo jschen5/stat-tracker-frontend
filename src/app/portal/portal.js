@@ -1,5 +1,5 @@
-angular.module( 'stattracker.portal', [
-  'stattracker.user',
+angular.module( 'vivace.portal', [
+  'vivace.user',
   'ui.router'
 ])
 

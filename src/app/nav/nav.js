@@ -1,8 +1,8 @@
-angular.module( 'stattracker.nav', [
-  'stattracker.user'
+angular.module( 'vivace.nav', [
+  'vivace.user'
 ])
 
-.controller('NavCtrl', function NavCtrl($scope, User) {
+.controller('NavCtrl', function NavCtrl($scope, $location, User) {
 
   $scope.loggedIn = User.loggedIn;
   $scope.username = User.username;
@@ -14,6 +14,10 @@ angular.module( 'stattracker.nav', [
   });
 
   $scope.logout = User.logout;
+
+  $scope.navClass = function (path) {
+    return $location.path() === path;
+  };
 })
 
 ;

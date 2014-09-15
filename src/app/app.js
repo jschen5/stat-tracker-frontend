@@ -1,12 +1,12 @@
-angular.module( 'stattracker', [
+angular.module( 'vivace', [
   'templates-app',
   'templates-common',
   'ui.router',
   'ngCookies',
-  'stattracker.user',
-  'stattracker.nav',
-  'stattracker.home',
-  'stattracker.portal'
+  'vivace.user',
+  'vivace.nav',
+  'vivace.home',
+  'vivace.portal'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
@@ -31,7 +31,7 @@ angular.module( 'stattracker', [
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = 'StatTracker | ' + toState.data.pageTitle;
+      $scope.pageTitle = 'Vivace | ' + toState.data.pageTitle;
     }
   });
 })

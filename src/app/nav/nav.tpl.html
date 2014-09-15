@@ -15,8 +15,12 @@
       <div class="container">
         <a class="navbar-brand" href="#/home">VIVACE</a>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#/students">Students</a></li>
-          <li><a href="#/schedule">Schedule</a></li>
+          <li ng-class="{'active': navClass('/editor')}">
+            <a href="#/editor">Editor</a>
+          </li>
+          <li ng-class="{'active': navClass('/projects')}">
+            <a href="#/projects">Projects</a>
+          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right user">
           <li ng-if="!loggedIn"><a href="#/login">Login</a></li>

@@ -1,5 +1,5 @@
 {
-  "name": "stat-tracker",
+  "name": "vivace",
   "version": "0.3.1",
   "devDependencies": {
     "angular": "~1.2.12",
