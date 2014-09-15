@@ -80,7 +80,17 @@ module.exports = {
       'vendor/bootstrap/fonts/glyphicons-halflings-regular.eot',
       'vendor/bootstrap/fonts/glyphicons-halflings-regular.svg',
       'vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf',
-      'vendor/bootstrap/fonts/glyphicons-halflings-regular.woff'
+      'vendor/bootstrap/fonts/glyphicons-halflings-regular.woff',
+
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light/Hattori_Hanzo-webfont.eot',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light/Hattori_Hanzo-webfont.svg',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light/Hattori_Hanzo-webfont.ttf',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light/Hattori_Hanzo-webfont.woff',
+
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light_italic/Hattori_Hanzo_Italic-webfont.eot',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light_italic/Hattori_Hanzo_Italic-webfont.svg',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light_italic/Hattori_Hanzo_Italic-webfont.ttf',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light_italic/Hattori_Hanzo_Italic-webfont.woff',
     ]
   },
 };
