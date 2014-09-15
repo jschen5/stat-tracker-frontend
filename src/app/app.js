@@ -6,18 +6,11 @@ angular.module( 'vivace', [
   'vivace.user',
   'vivace.nav',
   'vivace.home',
-  'vivace.portal'
+  'vivace.portal',
+  'vivace.editor'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-
-/*  $stateProvider
-    .state('stats', {
-      url: '/stats',
-      title: 'Stats Central',
-      templateUrl: 'stats/stats.tpl.html',
-      controller: 'StatsCtrl'
-    });*/
 
   $urlRouterProvider.otherwise( '/home' );
 })
