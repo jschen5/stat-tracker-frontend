@@ -70,7 +70,11 @@ module.exports = {
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/angular-cookies/angular-cookies.min.js',
-      'vendor/angular-cookies/angular-cookies.min.js.map'
+      'vendor/angular-cookies/angular-cookies.min.js.map',
+      'vendor/ng-file-upload/angular-file-upload.min.js'
+      /*'vendor/easeljs/lib/easeljs-0.7.1.min.js',
+      'vendor/raphael/dev/raphael.min.js',
+      'vendor/vexflow/build/vexflow/vexflow-min.js'*/
     ],
     css: [
     ],
@@ -80,7 +84,17 @@ module.exports = {
       'vendor/bootstrap/fonts/glyphicons-halflings-regular.eot',
       'vendor/bootstrap/fonts/glyphicons-halflings-regular.svg',
       'vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf',
-      'vendor/bootstrap/fonts/glyphicons-halflings-regular.woff'
+      'vendor/bootstrap/fonts/glyphicons-halflings-regular.woff',
+
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light/Hattori_Hanzo-webfont.eot',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light/Hattori_Hanzo-webfont.svg',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light/Hattori_Hanzo-webfont.ttf',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light/Hattori_Hanzo-webfont.woff',
+
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light_italic/Hattori_Hanzo_Italic-webfont.eot',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light_italic/Hattori_Hanzo_Italic-webfont.svg',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light_italic/Hattori_Hanzo_Italic-webfont.ttf',
+      'vendor/hattori-hanzo/web-fonts/hattorihanzo_light_italic/Hattori_Hanzo_Italic-webfont.woff',
     ]
   },
 };

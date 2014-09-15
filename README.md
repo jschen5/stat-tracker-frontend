@@ -14,6 +14,7 @@ $ cd ng-boilerplate
 $ sudo npm -g install grunt-cli karma bower
 $ npm install
 $ bower install
+$ follow build instructions for vexflow at `https://github.com/0xfe/vexflow/wiki/Build-Instructions`
 $ grunt watch
 ```
 

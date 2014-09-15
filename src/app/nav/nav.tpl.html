@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse" role="navigation" ng-controller="NavCtrl">
+<nav id="main-nav" class="navbar navbar-inverse" role="navigation" ng-controller="NavCtrl">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -13,12 +13,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div class="container">
-        <a class="navbar-brand" href="#/home">Vivace</a>
+        <a class="navbar-brand" href="#/home">VIVACE</a>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#/students">Students</a></li>
-          <li><a href="#/schedule">Schedule</a></li>
+          <li ng-class="{'active': navClass('/event')}">
+            <a href="#/events">Events</a>
+          </li>
+          <li ng-class="{'active': navClass('/projects')}">
+            <a href="#/projects">Projects</a>
+          </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right user">
           <li ng-if="!loggedIn"><a href="#/login">Login</a></li>
           <li ng-if="loggedIn">
             <a class="pull-right" href="" ng-click="logout()">

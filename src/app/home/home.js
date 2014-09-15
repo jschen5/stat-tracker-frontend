@@ -12,7 +12,7 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'stattracker.home', [
+angular.module( 'vivace.home', [
   // 'ui.state'
   'ui.router'
 ])

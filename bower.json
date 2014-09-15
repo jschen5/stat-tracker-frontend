@@ -1,5 +1,5 @@
 {
-  "name": "stat-tracker",
+  "name": "vivace",
   "version": "0.3.1",
   "devDependencies": {
     "angular": "~1.2.12",
@@ -7,7 +7,11 @@
     "bootstrap": "~3.1.0",
     "angular-bootstrap": "~0.10.0",
     "angular-ui-router": "~0.2.8",
-    "angular-cookies": "1.2.12"
+    "angular-cookies": "1.2.12",
+    "ng-file-upload": "*",
+    "easeljs": "*",
+    "raphael": "*",
+    "vexflow": "*"
   },
   "dependencies": {}
 }
