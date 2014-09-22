@@ -15,7 +15,9 @@ angular.module( 'vivace.editor', [
 
 .controller('EditorCtrl', function EditorCtrl($scope, $location, User) {
 
-
+  $(function () {
+    $('#editor-container').vivaceMusicEditor({});
+  });
 
 })
 

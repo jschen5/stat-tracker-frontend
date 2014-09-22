@@ -70,7 +70,8 @@ module.exports = {
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/angular-cookies/angular-cookies.min.js',
-      'vendor/angular-cookies/angular-cookies.min.js.map'
+      'vendor/angular-cookies/angular-cookies.min.js.map',
+      'vendor/easeljs/lib/easeljs-0.7.1.min.js'
     ],
     css: [
     ],
