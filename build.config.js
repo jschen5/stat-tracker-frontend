@@ -71,7 +71,9 @@ module.exports = {
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/angular-cookies/angular-cookies.min.js',
       'vendor/angular-cookies/angular-cookies.min.js.map',
-      'vendor/easeljs/lib/easeljs-0.7.1.min.js'
+      'vendor/easeljs/lib/easeljs-0.7.1.min.js',
+      'vendor/raphael/dev/raphael.min.js',
+      'vendor/vexflow/build/vexflow/vexflow-min.js'
     ],
     css: [
     ],

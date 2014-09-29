@@ -1,5 +1,6 @@
 angular.module( 'vivace.editor', [
-  'vivace.user'
+  'vivace.user',
+  'vivace.composer'
 ])
 
 .config(function config($stateProvider) {
@@ -13,11 +14,11 @@ angular.module( 'vivace.editor', [
     ;
 })
 
-.controller('EditorCtrl', function EditorCtrl($scope, $location, User) {
+.controller('EditorCtrl', function EditorCtrl($scope, $location, User, Composer) {
 
-  $(function () {
-    $('#editor-container').vivaceMusicEditor({});
-  });
+  var canvas = $('#editor-container');
+
+  Composer.init(canvas);
 
 })
 
